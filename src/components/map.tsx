@@ -523,8 +523,7 @@ const KananaskisMap = (props: innerMapProps) => {
         "Content-type": "application/json",
       },
     }).then((res) => res.json());
-    const parsedData = JSON.parse(data);
-    return parsedData;
+    return data;
   }
 
   useEffect(() => {

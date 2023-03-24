@@ -4,8 +4,6 @@ import { SiteInfoPanelData } from "../../types";
 
 export default async function handler(req: any, res: any) {
   if (req.body.selectedMarker != undefined) {
-    // const fileContents = StaticSiteInfo
-    // const fileContentsParsed = JSON.parse(fileContents);
     const markerData = StaticSiteInfo.filter(
       //@ts-ignore
       (markerInfo: SiteInfoPanelData) =>

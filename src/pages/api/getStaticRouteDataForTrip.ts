@@ -1,16 +1,9 @@
-import path from "path";
-import { promises as fs } from "fs";
+import { StaticRouteData } from "../../utils/staticRouteData";
 
 export default async function handler(req: any, res: any) {
-  const fileContents = await fs.readFile(
-    process.cwd() + "/public/staticRouteData.json",
-    "utf8"
-  );
-  const fileContentsParsed = JSON.parse(fileContents);
-
   let segmentLength = 0;
   let segmentGrossElevation = 0;
-  for (let staticRoute of fileContentsParsed) {
+  for (let staticRoute of StaticRouteData) {
     if (
       staticRoute.geoJson.metadata.query.coordinates[0][0] === req.body[0][0] &&
       staticRoute.geoJson.metadata.query.coordinates[0][1] === req.body[0][1] &&
