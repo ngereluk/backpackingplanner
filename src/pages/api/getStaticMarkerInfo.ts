@@ -1,14 +1,13 @@
+import { StaticSiteInfo } from "@/utils/staticSiteInfo";
 import { promises as fs } from "fs";
 import { SiteInfoPanelData } from "../../types";
 
 export default async function handler(req: any, res: any) {
   if (req.body.selectedMarker != undefined) {
-    const fileContents = await fs.readFile(
-      process.cwd() + "/public/staticSiteInfo.json",
-      "utf8"
-    );
-    const fileContentsParsed = JSON.parse(fileContents);
-    const markerData = fileContentsParsed.filter(
+    // const fileContents = StaticSiteInfo
+    // const fileContentsParsed = JSON.parse(fileContents);
+    const markerData = StaticSiteInfo.filter(
+      //@ts-ignore
       (markerInfo: SiteInfoPanelData) =>
         markerInfo.name === req.body.selectedMarker
     );
