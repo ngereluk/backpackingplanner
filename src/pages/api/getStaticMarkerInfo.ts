@@ -4,7 +4,7 @@ import { SiteInfoPanelData } from "../../types";
 export default async function handler(req: any, res: any) {
   if (req.body.selectedMarker != undefined) {
     const fileContents = await fs.readFile(
-      process.cwd() + "/src/utils/staticSiteInfo.json",
+      process.cwd() + "/public/staticSiteInfo.json",
       "utf8"
     );
     const fileContentsParsed = JSON.parse(fileContents);
