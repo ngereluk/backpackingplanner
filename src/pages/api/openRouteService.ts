@@ -21,7 +21,7 @@ export default async function orsApiHandler(
 
   const geojsonObject = await ormResponse.json();
 
-  await writeFile("./file.json", JSON.stringify(geojsonObject));
+  //  await writeFile("./file.json", JSON.stringify(geojsonObject));
 
   res.status(200).json({
     geojsonObject: geojsonObject,
