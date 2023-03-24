@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { tripCoordObj, SegmentData, ItineraryObj } from "../pages/types";
+import { tripCoordObj, SegmentData, ItineraryObj } from "../types";
 
 export interface tripInfoProps {
   tripCoordWithBool: tripCoordObj[];

@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { SiteInfoPanelData } from "../../pages/types";
+import { SiteInfoPanelData } from "../../types";
 
 export default async function handler(req: any, res: any) {
   if (req.body.selectedMarker != undefined) {

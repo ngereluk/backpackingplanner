@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { SiteInfoPanelData } from "../pages/types";
+import { SiteInfoPanelData } from "../types";
 
 interface siteListProps {
   siteMenuViz: boolean;

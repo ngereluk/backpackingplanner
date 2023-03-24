@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { GeoJSONProps } from "react-leaflet";
-import { tripCoordObj, SegmentData } from "../pages/types";
+import { tripCoordObj, SegmentData } from "../types";
 var _ = require("lodash");
 
 interface generateTripInfoProps {

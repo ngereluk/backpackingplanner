@@ -15,7 +15,7 @@ import React, { useEffect, useState, Dispatch, SetStateAction } from "react";
 //import DetectZoom from "./detectZoom";
 import { RightHandMenu } from "./rightHandMenu";
 import { GenerateTripInfo } from "./generateTripInfoBtn";
-import { tripCoordObj, SegmentData } from "../pages/types";
+import { tripCoordObj, SegmentData } from "../types";
 import dynamic from "next/dynamic";
 
 const DetectZoom = dynamic(() => import("./detectZoom"), {
