@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import { GeoJSONProps } from "react-leaflet";
 
-const Map = dynamic(() => import("./components/map"), {
+const Map = dynamic(() => import("../components/map"), {
   ssr: false,
 });
 export default function Home() {

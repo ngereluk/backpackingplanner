@@ -1,4 +1,4 @@
-import { SiteInfoPanelData } from "../../pages/types";
+import { SiteInfoPanelData } from "../pages/types";
 
 interface siteInfoPanelProps {
   siteInfoPanelData: SiteInfoPanelData;

@@ -1,12 +1,12 @@
-import { GenerateTripInfo } from "../components/generateTripInfoBtn";
+import { GenerateTripInfo } from "./generateTripInfoBtn";
 import { GeoJSONProps, useMap } from "react-leaflet";
 import React, { useEffect, useState, Dispatch, SetStateAction } from "react";
-import { tripCoordObj, SegmentData } from "../../pages/types";
+import { tripCoordObj, SegmentData } from "../pages/types";
 import TripInfo from "./tripInfo";
 import TripForecast from "./tripForecast";
 import SiteList from "./siteList";
-import SiteInfoPanel from "../components/siteInfoPanel";
-import { SiteInfoPanelData } from "../../pages/types";
+import SiteInfoPanel from "./siteInfoPanel";
+import { SiteInfoPanelData } from "../pages/types";
 
 interface rightHandMenuProps {
   geojsonObjects: GeoJSONProps["data"][];
